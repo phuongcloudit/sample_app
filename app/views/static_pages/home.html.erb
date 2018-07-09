@@ -1,7 +1,12 @@
-<% provide(:title, t(".title")) %>
-<h1><%= t ".sample_app" %></h1>
-<p>
-  <%= t ".this_is" %>
-  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  <%= t ".sample_appli" %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t ".welcome" %></h1>
+
+  <h2>
+    <%= t ".this_is" %>
+    <a href="http://www.railstutorial.org/"><%= t ".tutorial" %></a><%= t ".sample_appli" %>
+  </h2>
+
+  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: t(".rails_logo")), 'http://rubyonrails.org/' %>
