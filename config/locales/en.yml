@@ -32,6 +32,7 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
   hello: "Hello world"
+  welcome: "Welcome to the Sample App!"
   static_pages:
     about:
       title: "About"
@@ -71,6 +72,10 @@ en:
       title: "Sign up"
       singup: "Sign up"
       this_is: "This will be a signup page for new users."
+      create: "Create my account"
+      confirm: "Confirmation"
+    show:
+      not_found: "User not found!"
   layouts:
     footer:
       the: "The"
