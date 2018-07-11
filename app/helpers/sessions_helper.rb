@@ -17,24 +17,12 @@ module SessionsHelper
     end
   end
 
-  def check_remember
-    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-  end
-
   def logged_in?
     current_user.present?
   end
 
   def log_out
-    forget(current_user)
     session.delete(:user_id)
     @current_user = nil
-  end
-
-  # Forgets a persistent session.
-  def forget user
-    user.forget
-    cookies.delete(:user_id)
-    cookies.delete(:remember_token)
   end
 end

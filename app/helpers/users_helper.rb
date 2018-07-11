@@ -6,4 +6,11 @@ module UsersHelper
     gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
     image_tag(gravatar_url, alt: user.name, class: "gravatar")
   end
+
+  def load_user
+    @user = User.find_by id: params[:id]
+    return if @user.present?
+    flash[:warning] = t ".not_found"
+    redirect_to root_path
+  end
 end
