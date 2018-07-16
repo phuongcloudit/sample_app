@@ -57,6 +57,7 @@ en:
       sample_appli: "sample application."
       signup: "Sign up now!"
       rails_logo: "Rails logo"
+      micropost_feed: "Micropost Feed"
     help:
       title: "Help"
       rails_tu: "Rails Tutorial help section"
@@ -139,13 +140,23 @@ en:
       remember: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination!"
+      not_activa: "Account not activated. "
+      check_email: "Check your email for the activation link."
       not_activa: "Account not activated. Check your email for the activation link."
   shared:
     error_messages:
       the_form: "The form contains"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_my: "View my profile"
   signup_error:
     one: " %{count} error"
     other: " %{count} errors"
+  user_micro_count:
+    one: " %{count} micropost"
+    other: " %{count} microposts"
   account_activations:
     edit:
       acc_activated: "Account activated!"
@@ -171,6 +182,14 @@ en:
       pass_reset: "Password has been reset."
       empty: "can't be empty"
     expi: "Password reset has expired."
+  microposts:
+    errors:
+      picture_size: "should be less than 5MB"
+    you_sure: "You sure?"
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
   user_mailer:
     account_activation:
       sample_app: "Sample App"

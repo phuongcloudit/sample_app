@@ -27,7 +27,6 @@ Rails.application.configure do
   config.assets.debug = true
   config.assets.quiet = true
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
   host = "http://localhost:3000"
