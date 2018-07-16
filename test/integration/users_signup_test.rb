@@ -13,9 +13,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     follow_redirect!
     assert_template "users/show"
-<<<<<<< HEAD
     assert is_logged_in?
-=======
->>>>>>> 3f2c4be... Finish user signup with ssl and Puma webserver in production
   end
 end

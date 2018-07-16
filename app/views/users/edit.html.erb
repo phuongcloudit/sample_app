@@ -1,4 +1,4 @@
-<% provide(:title, t(".title")) %>
+<% provide :title, t(".title") %>
 <h1><%= t ".update_user" %></h1>
 
 <div class="row">
@@ -15,7 +15,7 @@
       <%= f.label t(".password") %>
       <%= f.password_field :password, class: "form-control" %>
 
-      <%= f.label t(".confirm"), t(".confirm") %>
+      <%= f.label t(".pass_conf"), t(".confirm") %>
       <%= f.password_field :password_confirmation, class: "form-control" %>
 
       <%= f.submit t(".save_change"), class: "btn btn-primary" %>
