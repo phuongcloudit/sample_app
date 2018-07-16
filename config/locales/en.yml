@@ -89,4 +89,22 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      logout: "Log out"
       sample_app: "sample app"
+      profile: "Profile"
+      setting: "Settings"
+      users: "Users"
+      acount: "Acount"
+  sessions:
+    new:
+      title: "Log in"
+      signup: "Sign up now"
+      new_user: "New user?"
+    create:
+      invalid: "Invalid email/password combination!"
+  shared:
+    error_messages:
+      the_form: "The form contains"
+  signup_error:
+    one: " %{count} error"
+    other: " %{count} errors"

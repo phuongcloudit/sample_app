@@ -2,10 +2,7 @@
 
 class UsersController < ApplicationController
   def show
-    @user = User.find_by id: params[:id]
-    return unless @user.nil?
-    flash[:warning] = t ".not_found"
-    redirect_to root_path
+    load_user
   end
 
   def new
