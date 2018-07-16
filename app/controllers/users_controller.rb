@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
+  before_action :load_user, only: %i(edit update destroy)
   def show
     load_user
   end
@@ -28,12 +29,10 @@ class UsersController < ApplicationController
   end
 
   def edit
-    load_user
   end
 
   def update
-    load_user
-    if @user.update(user_params)
+    if @user.update user_params
       flash[:success] = t(".profile_updated")
       redirect_to @user
     else
@@ -42,12 +41,11 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find_by id: params[:id]
     if @user.destroy
       flash[:success] = t(".user_delete")
       redirect_to users_path
     else
-      flash[:warning] = t ".not_found"
+      flash[:warning] = t ".delete_err"
       redirect_to root_path
     end
   end

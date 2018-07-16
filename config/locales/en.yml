@@ -81,13 +81,18 @@ en:
       create: "Create my account"
       confirm: "Confirmation"
     show:
+      delete_err: "Error delete user!"
       not_found: "User not found!"
     edit:
       please_login: "Please log in."
       title: "Edit user"
+      update_user: "Update your profile"
       change: "change"
       confirm: "Confirmation"
       save_change: "Save changes"
+      email: "email"
+      name: "name"
+      password: "password"
     update:
       profile_updated: "Profile updated"
     destroy:
@@ -124,4 +129,3 @@ en:
   signup_error:
     one: " %{count} error"
     other: " %{count} errors"
-
