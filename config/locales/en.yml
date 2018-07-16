@@ -104,12 +104,26 @@ en:
       confirm: "Confirmation"
       save_change: "Save changes"
       pass_conf: "password_confirmation"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
     update:
       profile_updated: "Profile updated"
     destroy:
       user_delete: "User deleted"
     create:
       please_check_mail: "Please check your email to activate your account."
+    follow:
+      follow: "Follow"
+    follow_form:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_my_profile: "view my profile"
+      microposts: "Micropost:"
+      user: "user"
   layouts:
     footer:
       the: "The"
@@ -151,6 +165,8 @@ en:
       post: "Post"
     user_info:
       view_my: "View my profile"
+    stats:
+      followers: "followers"
   signup_error:
     one: " %{count} error"
     other: " %{count} errors"
