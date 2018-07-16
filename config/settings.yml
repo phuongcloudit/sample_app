@@ -3,3 +3,4 @@ name_maximum: 50
 email_maximum: 255
 password_minimum: 6
 remember_me: "1"
+gravatar_users: 50

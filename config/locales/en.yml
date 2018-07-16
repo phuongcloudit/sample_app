@@ -33,6 +33,7 @@ en:
   title: "Ruby on Rails Tutorial Sample App"
   hello: "Hello world"
   welcome: "Welcome to the Sample App!"
+
   static_pages:
     about:
       title: "About"
@@ -68,6 +69,11 @@ en:
     application:
       title: "Ruby on Rails Tutorial Sample App"
   users:
+    user:
+      sure: "You sure?"
+    index:
+      please_login: "Please log in."
+      title: "All users"
     new:
       title: "Sign up"
       singup: "Sign up"
@@ -76,6 +82,16 @@ en:
       confirm: "Confirmation"
     show:
       not_found: "User not found!"
+    edit:
+      please_login: "Please log in."
+      title: "Edit user"
+      change: "change"
+      confirm: "Confirmation"
+      save_change: "Save changes"
+    update:
+      profile_updated: "Profile updated"
+    destroy:
+      user_delete: "User deleted"
   layouts:
     footer:
       the: "The"
@@ -108,3 +124,4 @@ en:
   signup_error:
     one: " %{count} error"
     other: " %{count} errors"
+
